@@ -1,11 +1,11 @@
 import json
-import xml.etree.ElementTree as ET
+import xml.etree.ElementTree as ET  # noqa: N817
 from abc import abstractmethod, ABC
 
 
 class Serializer(ABC):
     @abstractmethod
-    def serialize(self, book_title: str, book_content: str):
+    def serialize(self, book_title: str, book_content: str) -> str:
         pass
 
 
